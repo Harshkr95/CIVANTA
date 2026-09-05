@@ -8,41 +8,41 @@
 
 ---
 
-##  Overview
+## Overview
 
 CIVANTA is a production-grade, modern, responsive frontend platform that bridges the gap between citizens and authorities. It combines **AI-powered intelligence**, **multilingual support**, **location intelligence**, and **real-time analytics** to create a trusted public-impact ecosystem.
 
-###  Key Features
+### Key Features
 
--  **AI-Powered Intelligence** — Smart classification and insights
--  **Multilingual Support** — English, Hindi, Bengali, Marathi, Tamil, Telugu
--  **Location Intelligence** — Interactive map-based reporting
--  **Real-Time Analytics** — Data-driven insights with Recharts
--  **Live Notifications** — Real-time status updates
--  **Role-Based Access** — Citizen and Admin dashboards
--  **Fully Responsive** — Desktop, tablet, and mobile optimized
--  **Modern UI/UX** — Premium SaaS-style interface
-
----
-
-##  Tech Stack
-
-| Category | Technology | Version |
-|----------|-----------|---------|
-| **Framework** | React.js | 19.2 |
-| **Build Tool** | Vite | 8.2 |
-| **Styling** | Tailwind CSS | 4.3 |
-| **Routing** | React Router DOM | 8.3 |
-| **Animations** | Motion (Framer Motion) | 13.2 |
-| **Charts** | Recharts | 3.10 |
-| **HTTP Client** | Axios | 1.9 |
-| **Forms** | React Hook Form | 7.56 |
-| **Icons** | Lucide React | 0.500 |
-| **Linting** | ESLint | 9.25 |
+- **AI-Powered Intelligence** — Smart classification and insights
+- **Multilingual Support** — English, Hindi, Bengali, Marathi, Tamil, Telugu
+- **Location Intelligence** — Interactive map-based reporting
+- **Real-Time Analytics** — Data-driven insights with Recharts
+- **Live Notifications** — Real-time status updates
+- **Role-Based Access** — Citizen and Admin dashboards
+- **Fully Responsive** — Desktop, tablet, and mobile optimized
+- **Modern UI/UX** — Premium SaaS-style interface
 
 ---
 
-##  Project Structure
+## Tech Stack
+
+| Category        | Technology             | Version |
+| --------------- | ---------------------- | ------- |
+| **Framework**   | React.js               | 19.2    |
+| **Build Tool**  | Vite                   | 8.2     |
+| **Styling**     | Tailwind CSS           | 4.3     |
+| **Routing**     | React Router DOM       | 8.3     |
+| **Animations**  | Motion (Framer Motion) | 13.2    |
+| **Charts**      | Recharts               | 3.10    |
+| **HTTP Client** | Axios                  | 1.9     |
+| **Forms**       | React Hook Form        | 7.56    |
+| **Icons**       | Lucide React           | 0.500   |
+| **Linting**     | ESLint                 | 9.25    |
+
+---
+
+## Project Structure
 
 ```
 CIVANTA/
@@ -86,7 +86,7 @@ CIVANTA/
 
 ---
 
-##  Installation
+## Installation
 
 ### Prerequisites
 
@@ -108,6 +108,7 @@ npm install
 ```
 
 This installs all required packages:
+
 - React 19.2, Vite 8.2, Tailwind CSS 4.3
 - React Router 8.3, Motion 13.2, Recharts 3.10
 - Axios, React Hook Form, Lucide React, ESLint
@@ -151,61 +152,64 @@ Visit **http://localhost:5173** 🎉
 
 ---
 
-##  Demo Accounts
+## Demo Accounts
 
 Use these credentials to explore the platform (any password ≥ 4 characters):
 
-| Role | Email | Access |
-|------|-------|--------|
-|  **Citizen** | `user@civanta.in` | `/dashboard` |
-|  **Admin** | `admin@civanta.in` | `/admin` |
+| Role        | Email              | Access       |
+| ----------- | ------------------ | ------------ |
+| **Citizen** | `user@civanta.in`  | `/dashboard` |
+| **Admin**   | `admin@civanta.in` | `/admin`     |
 
 ---
 
-##  Available Scripts
+## Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server (http://localhost:5173) |
-| `npm run build` | Build for production (creates `dist/` folder) |
-| `npm run preview` | Preview production build locally |
-| `npm run lint` | Run ESLint to check for issues |
-| `npm run lint:fix` | Auto-fix ESLint issues |
+| Command            | Description                                      |
+| ------------------ | ------------------------------------------------ |
+| `npm run dev`      | Start development server (http://localhost:5173) |
+| `npm run build`    | Build for production (creates `dist/` folder)    |
+| `npm run preview`  | Preview production build locally                 |
+| `npm run lint`     | Run ESLint to check for issues                   |
+| `npm run lint:fix` | Auto-fix ESLint issues                           |
 
 ---
 
-##  Multilingual Support
+## Multilingual Support
 
 CIVANTA supports **6 Indian languages**:
 
-| Code | Language |
-|------|----------|
-| `en` | English |
-| `hi` | हिन्दी (Hindi) |
+| Code | Language        |
+| ---- | --------------- |
+| `en` | English         |
+| `hi` | हिन्दी (Hindi)  |
 | `bn` | বাংলা (Bengali) |
 | `mr` | मराठी (Marathi) |
-| `ta` | தமிழ் (Tamil) |
+| `ta` | தமிழ் (Tamil)   |
 | `te` | తెలుగు (Telugu) |
 
 Switch languages using the 🌐 icon in the navbar.
 
 ---
 
-##  Key Pages
+## Key Pages
 
 ### Public Pages
+
 - **Landing** (`/`) — Hero, Challenge, Solution, Features, CTA
 - **About** (`/about`) — Mission, Vision, Contact
 - **Login** (`/login`) — Citizen/Admin authentication
 - **Register** (`/register`) — New user signup
 
 ### Citizen Dashboard (`/dashboard`)
+
 - Submit reports (4-step form)
 - Track submissions with timeline
 - View notifications
 - Manage profile
 
 ### Admin Dashboard (`/admin`)
+
 - Overview with 5 KPIs
 - Manage all submissions
 - Analytics with 4+ charts
@@ -213,16 +217,18 @@ Switch languages using the 🌐 icon in the navbar.
 
 ---
 
-##  Backend Integration (Future)
+## Backend Integration (Future)
 
 The frontend is **API-ready**. To connect to a backend:
 
 1. Update `.env`:
+
    ```env
    VITE_API_URL=https://your-api.com/api
    ```
 
 2. Replace mock data calls in `src/services/`:
+
    ```js
    // Current (mock)
    export const submissionService = {
@@ -232,7 +238,7 @@ The frontend is **API-ready**. To connect to a backend:
    // Future (API)
    export const submissionService = {
      list: async () => {
-       const res = await api.get('/submissions');
+       const res = await api.get("/submissions");
        return res.data;
      },
    };
@@ -247,20 +253,22 @@ The frontend is **API-ready**. To connect to a backend:
 
 ---
 
-##  Design System
+## Design System
 
 ### Brand Colors
+
 ```css
---color-brand-500: #6366f1  /* Primary */
---color-brand-600: #4f46e5  /* Hover */
---color-brand-700: #4338ca  /* Active */
+--color-brand-500: #6366f1 /* Primary */ --color-brand-600: #4f46e5 /* Hover */
+  --color-brand-700: #4338ca /* Active */;
 ```
 
 ### Typography
+
 - **Primary:** Inter
 - **Display:** Plus Jakarta Sans
 
 ### Components
+
 - Rounded cards with soft shadows
 - Clean borders and consistent spacing
 - Accessible focus states
@@ -268,38 +276,40 @@ The frontend is **API-ready**. To connect to a backend:
 
 ---
 
-##  Security Features
+## Security Features
 
--  Protected routes (auth required)
--  Role-based access control
--  Environment variables (no hardcoded secrets)
--  Input validation (React Hook Form)
--  Safe API handling (Axios interceptors)
--  XSS prevention (React default)
+- Protected routes (auth required)
+- Role-based access control
+- Environment variables (no hardcoded secrets)
+- Input validation (React Hook Form)
+- Safe API handling (Axios interceptors)
+- XSS prevention (React default)
 
 ---
 
-##  Analytics & Charts
+## Analytics & Charts
 
 Powered by **Recharts 3.10**:
 
--  Submission trends (Line/Area charts)
--  Resolution rate (Donut charts)
--  Category distribution (Bar charts)
--  Response time tracking
--  Geographic insights (map placeholders)
+- Submission trends (Line/Area charts)
+- Resolution rate (Donut charts)
+- Category distribution (Bar charts)
+- Response time tracking
+- Geographic insights (map placeholders)
 
 ---
 
-##  AI Assistant
+## AI Assistant
 
 **Civanta AI** — Floating chat widget that helps users:
+
 - Submit reports
 - Check submission status
 - Find services
 - Get guidance in multiple languages
 
 Quick prompts:
+
 - "How do I submit a report?"
 - "Check my submission"
 - "What services are available?"
@@ -307,7 +317,7 @@ Quick prompts:
 
 ---
 
-##  Deployment
+## Deployment
 
 ### Build for Production
 
@@ -334,9 +344,10 @@ netlify deploy --prod
 ### Deploy to GitHub Pages
 
 1. Update `vite.config.js`:
+
    ```js
    export default defineConfig({
-     base: '/your-repo-name/',
+     base: "/your-repo-name/",
      // ...
    });
    ```
@@ -349,43 +360,49 @@ netlify deploy --prod
 
 ---
 
-##  Troubleshooting
+## Troubleshooting
 
 ### Issue: `(empty)` after `npm list`
+
 **Fix:** Your `package.json` is missing dependencies. Copy the full `package.json` from this README and run `npm install` again.
 
 ### Issue: Tailwind styles not applying
+
 **Fix:** Ensure `vite.config.js` has `tailwindcss()` plugin and `src/index.css` starts with `@import "tailwindcss";`
 
 ### Issue: `Cannot find module 'framer-motion'`
+
 **Fix:** The package was renamed to `motion`. Update imports:
+
 ```jsx
 // ❌ Old
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 // ✅ New
-import { motion } from 'motion/react';
+import { motion } from "motion/react";
 ```
 
 ### Issue: Blank white page
+
 **Fix:** Check browser console for errors. Usually a missing file or typo.
 
 ---
 
-##  Environment Variables
+## Environment Variables
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `VITE_API_URL` | Backend API base URL | `/api` |
+| Variable       | Description          | Default |
+| -------------- | -------------------- | ------- |
+| `VITE_API_URL` | Backend API base URL | `/api`  |
 
 Create a `.env` file in the project root:
+
 ```env
 VITE_API_URL=http://localhost:5000/api
 ```
 
 ---
 
-##  Contributing
+## Contributing
 
 This project was built for **Smart India Hackathon 2026**.
 
@@ -406,21 +423,21 @@ This project was built for **Smart India Hackathon 2026**.
 
 ---
 
-##  License
+## License
 
 This project is created for **Smart India Hackathon 2026** (SIH260002).
 
 ---
 
-##  Team
+## Team
 
 **Problem Statement:** SIH260002  
 **Theme:** Smart Governance / Citizen-Centric Administration  
-**Category:** Software/Website  
+**Category:** Software/Website
 
 ---
 
-##  Acknowledgments
+## Acknowledgments
 
 - **Smart India Hackathon** — For the opportunity
 - **Ministry of Education, India** — For organizing SIH 2026
@@ -428,15 +445,16 @@ This project is created for **Smart India Hackathon 2026** (SIH260002).
 
 ---
 
-##  Contact
+## Contact
 
 For questions or support:
+
 - 📧 Email: faizakhtar774@gmail.com , harshkumar164826@gmail.com
 - 🌐 Website: [__________]
 
 ---
 
-##  Show Your Support
+## Show Your Support
 
 If this project helps you, give it a ⭐ on GitHub!
 
@@ -446,8 +464,4 @@ If this project helps you, give it a ⭐ on GitHub!
 
 **CIVANTA — Intelligent Technology. Real-World Impact.**
 
-
-
-
-
-##Made with Love❤️ by Faiz And Harsh
+## Made with Love❤️ by Faiz And Harsh
