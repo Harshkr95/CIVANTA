@@ -24,6 +24,10 @@ import UserManagement from "./pages/admin/UserManagement";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import AIAssistant from "./components/ai/AIAssistant";
 
+import Features from "./pages/public/Features";
+import Contact from "./pages/public/Contact";
+import HowItWorks from "./pages/public/HowItWorks";
+import Impact from "./pages/public/Impact";
 export default function App() {
   return (
     <>
@@ -32,10 +36,11 @@ export default function App() {
         <Route element={<PublicLayout />}>
           <Route path="/" element={<Landing />} />
           <Route path="/about" element={<About />} />
-          <Route path="/how-it-works" element={<Landing />} />
-          <Route path="/features" element={<Landing />} />
-          <Route path="/impact" element={<Landing />} />
-          <Route path="/contact" element={<About />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/impact" element={<Impact
+           />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Route>

@@ -9,14 +9,14 @@ export default function Button({
   ...props
 }) {
   const base =
-    "inline-flex items-center justify-center gap-2 font-medium rounded-xl transition-all disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2";
+    "flex items-center justify-center gap-2 font-medium rounded-xl transition-all disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2";
   const sizes = {
     sm: "px-3 py-1.5 text-sm",
     md: "px-4 py-2.5 text-sm",
     lg: "px-6 py-3 text-base",
   };
   const variants = {
-    primary: "bg-brand-600 text-white hover:bg-brand-700 shadow-sm",
+    primary: "bg-blue-600 text-white hover:bg-blue-700 shadow-sm",
     secondary:
       "bg-white text-slate-800 border border-slate-200 hover:bg-slate-50",
     ghost: "text-slate-700 hover:bg-slate-100",
