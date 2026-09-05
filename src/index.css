@@ -1,5 +1,10 @@
 @import "tailwindcss";
 /* hello faiz */
+@import "./theme.css";
+
+/* ============================================
+   Global Styles
+   ============================================ *
 :root {
   color-scheme: light;
 }
@@ -11,7 +16,7 @@ body,
 }
 
 body {
-  font-family: "Inter", "Plus Jakarta Sans", system-ui, sans-serif;
+  font-family: var(--font-sans);
   background: #ffffff;
   color: #0f172a;
   -webkit-font-smoothing: antialiased;
